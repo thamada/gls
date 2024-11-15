@@ -11,13 +11,14 @@ pip install git+https://github.com/thamada/gls.git
 ## Upgrade
 
 ```
-pip install --upgrade git+https://github.com/thamada/gls.git
+gls --upgrade
 ```
+
 
 ## Uninstall
 
 ```
-pip uninstall gls
+gls --remove
 ```
 
 ## Available Commands
