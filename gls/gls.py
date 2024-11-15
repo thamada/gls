@@ -55,6 +55,8 @@ def change_df(dataFrame):
     df = df.rename(columns={'n_tensor_core': 'TCs'})
     df = df.rename(columns={'tflops_fp8_tensor': 'FP8_TC'})
     df = df.rename(columns={'tdp': 'TDP'})
+    df = df.rename(columns={'gpu_chip': 'ASIC'})
+    df = df.rename(columns={'gpu_arch': 'arch'})
 
     return df
 
@@ -124,8 +126,8 @@ def create_cache_directory(path: str) -> None:
 def main():
     # コマンドライン引数の解析
     parser = argparse.ArgumentParser(description='GLS Command Tool')
-    parser.add_argument('--upgrade', action='store_true', help='Upgrade the gls command to the latest version')
-    parser.add_argument('--remove', action='store_true', help='Uninstall the gls command')
+    parser.add_argument('--upgrade', '--update', action='store_true', help='Upgrade the gls command to the latest version')
+    parser.add_argument('--remove', '--uninstall', action='store_true', help='Uninstall the gls command')
     args = parser.parse_args()
 
     # '--upgrade' オプションが指定された場合の処理
