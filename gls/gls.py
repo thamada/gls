@@ -126,8 +126,12 @@ def create_cache_directory(path: str) -> None:
 def main():
     # コマンドライン引数の解析
     parser = argparse.ArgumentParser(description='GLS Command Tool')
-    parser.add_argument('--upgrade', '--update', action='store_true', help='Upgrade the gls command to the latest version')
-    parser.add_argument('--remove', '--uninstall', action='store_true', help='Uninstall the gls command')
+    # 相互排他的なグループを作成（オプション）
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('--upgrade', '--update', action='store_true', help='Upgrade the gls command to the latest version')
+    group.add_argument('--remove', '--uninstall', action='store_true', help='Uninstall the gls command')
+    group.add_argument('--csv', action='store_true', help='Generate CSV/HTML files at /tmp/gls.cache/')
+
     args = parser.parse_args()
 
     # '--upgrade' オプションが指定された場合の処理
@@ -156,9 +160,10 @@ def main():
 
     # CSV/HTML形式で出力
     # index=False を指定することで、行番号（インデックス）を CSV ファイルに含めません。
-    create_cache_directory('/tmp/gls.cache')
-    gpu_df.to_csv('/tmp/gls.cache/output.csv', index=False)
-    gpu_df.to_html('/tmp/gls.cache/output.html', index=False)
+    if args.csv:
+        create_cache_directory('/tmp/gls.cache')
+        gpu_df.to_csv('/tmp/gls.cache/output.csv', index=False)
+        gpu_df.to_html('/tmp/gls.cache/output.html', index=False)
 
     # 各種整形後に標準出力
     table_str1 = set_title_colored(gpu_df) # タイトル行に色付け
