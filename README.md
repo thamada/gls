@@ -1,23 +1,37 @@
-# nvidia-smi
+# gls
 
-an nvidia-smi simulator
-
+gls: gpu list
 
 ## Install
 
 ```
-pip install git+https://github.com/thamada/nvidia-smi.git
+pip install git+https://github.com/thamada/gls.git
 ```
 
-then, you can use the following commands:
+## Uninstall
 
 ```
+pip uninstall gls
+```
+
+## Available Commands
+
+| commands           | Variations             |
+|--------------------|------------------------|
+| gls                |                        |
+| nvidia-smi         | -a, .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .l40s, .l4 |
+| deviceQuery        | .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .l40s, .l4, .mi300x |
+| rocm-smi           | -a                     |
+| rocminfo           |                        |
+
+
+<!--
+gls
 nvidia-smi
 nvidia-smi -a
 deviceQuery
 rocm-smi
 rocminfo
-
 nvidia-smi.a40
 nvidia-smi.a100
 nvidia-smi.h100
@@ -43,13 +57,9 @@ deviceQuery.rtx3090
 deviceQuery.l40s
 deviceQuery.l4
 deviceQuery.mi300x
-```
+-->
 
+## Screenshot
+![screenshot](./ss.png)
 
-## Uninstall
-
-```
-pip uninstall gls
-```
-
-Enjoy!
+Enjoy gls!
