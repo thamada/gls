@@ -44,8 +44,9 @@ setup(
     version=get_version(),  # バージョン情報をセット
     packages=find_packages(),
     install_requires=[
-        # 依存パッケージとそのバージョンを指定
-        "pandas>=2.2.3",
+        # 依存パッケージとそのバージョンを指定 (ubuntu >= 20.04)
+        "wheel>=0.45.0",
+        "pandas>=2.0.0", # "pandas>=2.2.3",
         "tabulate>=0.9.0",
         "colorama>=0.4.6",
     ],
