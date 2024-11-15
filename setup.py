@@ -12,6 +12,9 @@ setup(
     ],
     entry_points={
         'console_scripts': [
+            'nvidia-smi.gtx1050ti=gls.GTX1050Ti_smi:main',
+            'deviceQuery.gtx1050ti=gls.GTX1050Ti_deviceQuery:main',
+
             'nvidia-smi=gls.H100SXMx8_smi:main',
             'deviceQuery=gls.H100SXMx8_deviceQuery:main',
 

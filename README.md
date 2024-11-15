@@ -19,8 +19,8 @@ pip uninstall gls
 | commands           | Variations             |
 |--------------------|------------------------|
 | gls                |                        |
-| nvidia-smi         | -a, .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .l40s, .l4 |
-| deviceQuery        | .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .l40s, .l4, .mi300x |
+| nvidia-smi         | -a, .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .gtx1050ti, .l40s, .l4|
+| deviceQuery        | .a40, .a100, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtx4060ti, .rtx4090, .rtx3090, .gtx1050ti, .l40s, .l4, .mi300x |
 | rocm-smi           | -a                     |
 | rocminfo           |                        |
 

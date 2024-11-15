@@ -154,6 +154,54 @@ gpu_data = [
     },
     {
         'vendor': 'NVIDIA',
+        'product': 'GTX 1050 Ti',
+        'tdp': 75, # Watt
+        'vram_size': 4, # GB
+        'vram_bw': 112.128, # GB/s = (3.504 [GHz] * 2)[Gbps]  * 128-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 768,
+        'n_mp': 6, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1392, # MHz
+        'mem_clock': 3504, # MHz
+        'mem_bus_width': 128, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+        'gen_tensor_core': 0,
+        'tflops_fp16': 0.033408, # TFLOP/s (1:64!?)
+        'tflops_fp32': 2.138112, # TFLOP/s
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 3.0 x16', 
+        'gpu_chip': 'GP107',
+        'gpu_variant': 'GP107-400-A1',
+        'gpu_arch': 'Pascal',
+        'url': 'https://www.techpowerup.com/gpu-specs/geforce-gtx-1050-ti.c2885'
+    },
+    {
+        'vendor': 'NVIDIA',
+        'product': 'GTX 1080 Ti',
+        'tdp': 250, # Watt
+        'vram_size': 11, # GB
+        'vram_bw': 484.0, # GB/s = (5.5 [GHz] * 2)[Gbps]  * 352-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 3584,
+        'n_mp': 28, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1582, # MHz
+        'mem_clock': 5500, # MHz
+        'mem_bus_width': 352, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+        'gen_tensor_core': 0,
+        'tflops_fp16': 0.1171875, # TFLOP/s (1:64!?)
+        'tflops_fp32': 11.339776, # TFLOP/s
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 3.0 x16', 
+        'gpu_chip': 'GP102',
+        'gpu_variant': 'GP102-350-K1-A1',
+        'gpu_arch': 'Pascal',
+        'url': 'https://www.techpowerup.com/gpu-specs/nvidia-gp102.g798'
+    },
+    {
+        'vendor': 'NVIDIA',
         'product': 'RTX 4090',
         'tdp': 450, # Watt
         'vram_size': 24, # GB
