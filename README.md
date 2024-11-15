@@ -8,6 +8,12 @@ gls: gpu list
 pip install git+https://github.com/thamada/gls.git
 ```
 
+## Upgrade
+
+```
+pip install --upgrade git+https://github.com/thamada/gls.git
+```
+
 ## Uninstall
 
 ```
