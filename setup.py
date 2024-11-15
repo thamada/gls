@@ -1,8 +1,39 @@
+import re
 from setuptools import setup, find_packages
+
+'''
+# バージョン情報を取得する関数
+# === exec()を使用するため廃止 ===
+def get_version():
+    version = {}
+
+    # exec(fp.read(), version):
+    # ファイルから読み込んだコードを実行し、その実行コンテキスト（名前空間）として version 辞書を使用します。
+    # これにより、コード内で定義されたすべての変数が version 辞書に格納されます。
+    # (ただの小技です)
+    with open("gls/__init__.py") as fp:
+        exec(fp.read(), version)
+
+    vstr = version['__version__']
+    print ('version=', vstr)
+    return vstr
+'''
+
+# バージョン情報を取得する関数
+# === exec()を使用しないバージョン ===
+#  (*) コードは読みにくいので、それを避けたい 場合は上記のexec()使用バージョンに変更してください
+def get_version():
+    with open('gls/__init__.py', 'r') as f:
+        content = f.read()
+    version_match = re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', content, re.MULTILINE)
+    if version_match:
+        return version_match.group(1)
+    raise RuntimeError('Unable to find version string.')
+
 
 setup(
     name="gls",
-    version="1.0.2",
+    version=get_version(),  # バージョン情報をセット
     packages=find_packages(),
     install_requires=[
         # 依存パッケージとそのバージョンを指定

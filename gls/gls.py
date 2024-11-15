@@ -10,6 +10,7 @@ import sys
 import subprocess
 import argparse
 from gls.database import gpu_data # database.pyからgpu_dataをimport
+from gls import __version__       # __init__.py からバージョン情報をインポート
 
 def change_df(dataFrame):
     # 特定のキーを持つ列を削除
@@ -131,10 +132,11 @@ def main():
     group.add_argument('--upgrade', '--update', action='store_true', help='Upgrade the gls command to the latest version')
     group.add_argument('--remove', '--uninstall', action='store_true', help='Uninstall the gls command')
     group.add_argument('--csv', action='store_true', help='Generate CSV/HTML files at /tmp/gls.cache/')
+    group.add_argument('--version', action='store_true', help='Show the version of gls')
 
     args = parser.parse_args()
 
-    # '--upgrade' オプションが指定された場合の処理
+    # '--upgrade', '--update' オプションが指定された場合の処理
     if args.upgrade:
         print('Upgrading gls to the latest version...')
         try:
@@ -144,7 +146,7 @@ def main():
             print('An error occurred while upgrading gls:', e)
         sys.exit(0)
 
-    # '--remove' オプションが指定された場合の処理
+    # '--remove', '--uninstall' オプションが指定された場合の処理
     if args.remove:
         print('Uninstalling gls...')
         try:
@@ -152,6 +154,11 @@ def main():
             print('gls has been uninstalled.')
         except subprocess.CalledProcessError as e:
             print('An error occurred while uninstalling gls:', e)
+        sys.exit(0)
+
+    # '--version' オプションが指定された場合の処理
+    if args.version:
+        print(f'gls version {__version__}')
         sys.exit(0)
 
 

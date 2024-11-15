@@ -1,0 +1,4 @@
+
+upgrade:
+	pip install --upgrade .
+
