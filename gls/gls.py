@@ -6,6 +6,9 @@ from pathlib import Path
 from tabulate import tabulate
 from colorama import Fore, Style
 import pandas as pd
+import sys
+import subprocess
+import argparse
 from gls.database import gpu_data # database.pyからgpu_dataをimport
 
 def change_df(dataFrame):
@@ -119,6 +122,33 @@ def create_cache_directory(path: str) -> None:
     path_obj.mkdir(parents=True, exist_ok=True)
 
 def main():
+    # コマンドライン引数の解析
+    parser = argparse.ArgumentParser(description='GLS Command Tool')
+    parser.add_argument('--upgrade', action='store_true', help='Upgrade the gls command to the latest version')
+    parser.add_argument('--remove', action='store_true', help='Uninstall the gls command')
+    args = parser.parse_args()
+
+    # '--upgrade' オプションが指定された場合の処理
+    if args.upgrade:
+        print('Upgrading gls to the latest version...')
+        try:
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'git+https://github.com/thamada/gls.git'])
+            print('gls has been upgraded to the latest version.')
+        except subprocess.CalledProcessError as e:
+            print('An error occurred while upgrading gls:', e)
+        sys.exit(0)
+
+    # '--remove' オプションが指定された場合の処理
+    if args.remove:
+        print('Uninstalling gls...')
+        try:
+            subprocess.check_call([sys.executable, '-m', 'pip', 'uninstall', '-y', 'gls'])
+            print('gls has been uninstalled.')
+        except subprocess.CalledProcessError as e:
+            print('An error occurred while uninstalling gls:', e)
+        sys.exit(0)
+
+
     # 辞書gpu_dataをDataFrameに変換
     gpu_df = pd.DataFrame(gpu_data)
 
