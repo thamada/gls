@@ -132,7 +132,7 @@ def main():
     group.add_argument('--upgrade', '--update', action='store_true', help='Upgrade the gls command to the latest version')
     group.add_argument('--remove', '--uninstall', action='store_true', help='Uninstall the gls command')
     group.add_argument('--csv', action='store_true', help='Generate CSV/HTML files at /tmp/gls.cache/')
-    group.add_argument('--version', action='store_true', help='Show the version of gls')
+    group.add_argument('-v', '--version', action='store_true', help='Show the version of gls')
 
     args = parser.parse_args()
 
