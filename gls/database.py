@@ -376,7 +376,34 @@ gpu_data = [
     {
         'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
         'vendor': 'INTEL',
-        'product': 'Arc 770',
+        'product': 'Arc A380',
+        'tdp': 75, # Watt
+        'vram_size': 6, # GB
+        'vram_bw': 185.952, # GB/s = (7.748 [GHz] * 2)[Gbps]  * 96-bits / 8.0 [bits/byte]
+#        'vram_ecc': ???, # False, True
+        'n_sp_core': 1024,
+        'n_mp': 128, # number of MIMD-processors (SM for Nvidia, CU for AMD, EU for Intel)
+        'gpu_clock': 2050, # MHz
+        'mem_clock': 7748, # MHz
+        'mem_bus_width': 96, # Memory Bus Width (bits)
+        'n_tensor_core': 128,
+#        'gen_tensor_core': ???,
+        'tflops_fp16': 8.3968, # TFLOP/s (2:1)
+        'tflops_fp32': 4.1984, # TFLOP/s
+#        'tflops_fp8_tensor': ???, # TFLOP/s (Effective FP8 TFLOP/s) ???
+#        'tflops_fp8_tensor_sparse': ???, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature) ???
+        'system_interface': 'PCIe 4.0 x8', 
+        'gpu_chip': 'DG2-128',
+        'gpu_variant': 'ACM-G11',
+        'gpu_arch': 'Generation 12.7',
+        'url': 'https://www.techpowerup.com/gpu-specs/arc-a380.c3913'
+    },
+
+
+    {
+        'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
+        'vendor': 'INTEL',
+        'product': 'Arc A770',
         'tdp': 225, # Watt
         'vram_size': 16, # GB
         'vram_bw': 512.0, # GB/s = (8.0 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
