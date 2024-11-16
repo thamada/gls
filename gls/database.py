@@ -272,7 +272,7 @@ gpu_data = [
         'mem_bus_width': 6144, # Memory Bus Width (bits)
         'n_tensor_core': 528,
         'gen_tensor_core': 4,
-        'tflops_fp16': 241.27488, # TFLOP/s (4:1)
+        'tflops_fp16': 120.63744, # TFLOP/s (2:1)
         'tflops_fp32': 60.31872, # TFLOP/s
         'tflops_fp8_tensor': 1979, # TFLOP/s (Effective FP8 TFLOP/s)
         'tflops_fp8_tensor_sparse': 3958, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
@@ -297,7 +297,7 @@ gpu_data = [
         'mem_bus_width': 5120, # Memory Bus Width (bits)
         'n_tensor_core': 528,
         'gen_tensor_core': 4,
-        'tflops_fp16': 267.63264, # TFLOP/s (4:1)
+        'tflops_fp16': 133.81632, # TFLOP/s (2:1)
         'tflops_fp32': 66.90816, # TFLOP/s
         'tflops_fp8_tensor': 1979, # TFLOP/s (Effective FP8 TFLOP/s)
         'tflops_fp8_tensor_sparse': 3958, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
