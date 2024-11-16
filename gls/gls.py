@@ -17,6 +17,7 @@ def change_df(dataFrame):
     df = dataFrame
     df = df.drop(columns=['url'])
     df = df.drop(columns=['vram_ecc'])
+    df = df.drop(columns=['hints'])
 
     # 列の並びを変更したDataFrameを作成
     new_column_order = ['product', 'tflops_fp32', 'tflops_fp16', 'vram_bw', 'tdp', 'vram_size', 'n_sp_core', 'n_mp', 'gpu_clock', 'system_interface', 'n_tensor_core', 'tflops_fp8_tensor', 'gpu_chip', 'gpu_arch']
@@ -38,6 +39,7 @@ def change_df(dataFrame):
     df['tflops_fp32'] = df['tflops_fp32'].apply(lambda x: '%.1f' % x if pd.notna(x) else x)
     df['tflops_fp8_tensor'] = df['tflops_fp8_tensor'].apply(lambda x: '%.1f' % x if pd.notna(x) else x)
     df['vram_bw'] = df['vram_bw'].apply(lambda x: '%.1f' % x if pd.notna(x) else x)
+    df['vram_size'] = df['vram_size'].apply(lambda x: '%.1f' % x if pd.notna(x) else x)
     df['gpu_clock'] = df['gpu_clock'].apply(lambda x: '%.2f' % (x/1000.0) if pd.notna(x) else x)
 
     # 列の文字数を最大7文字に制限
