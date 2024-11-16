@@ -28,6 +28,33 @@ gpu_data = [
         'gpu_arch': 'Tesla',
         'url': 'https://www.techpowerup.com/gpu-specs/geforce-8800-gtx.c187'
     },
+
+    {
+        'vendor': 'NVIDIA',
+        'product': 'GTX 285',
+        'tdp': 204, # Watt
+        'vram_size': 1.024, # GB
+        'vram_bw': 158.976, # GB/s: (0.9 [GHz] * 2)[Gbps]  * 512-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 240,
+        'n_mp': 30, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1476, # MHz
+        'mem_clock': 1242, # MHz 
+        'mem_bus_width': 512, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 0, # TFLOP/s
+        'tflops_fp32': 0.70848, # TFLOP/s
+        'tflops_fp64': 0.08856, # TFLOP/s (1:8)
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 2.0 x16',
+        'gpu_chip': 'GT200B',
+        'gpu_variant': 'G200-350-B3',
+        'gpu_arch': 'Tesla 2.0',
+        'url': 'https://www.techpowerup.com/gpu-specs/geforce-gtx-285.c238'
+    },
+
     {
         'vendor': 'AMD',
         'product': 'HD 5870',
