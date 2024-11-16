@@ -5,6 +5,12 @@ gls: gpu list
 ## Install
 
 ```
+# (Recommended) Create a new python environment
+python3 -m venv /tmp/your_python
+source /tmp/your_python/bin/activate
+```
+
+```
 pip install git+https://github.com/thamada/gls.git
 ```
 

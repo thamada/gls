@@ -56,6 +56,32 @@ gpu_data = [
     },
 
     {
+        'vendor': 'NVIDIA',
+        'product': 'GTX 680',
+        'tdp': 195, # Watt
+        'vram_size': 2.048, # GB
+        'vram_bw': 192.256, # GB/s: (3.004 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 1536,
+        'n_mp': 8, # number of MIMD-processors (SM for Nvidia, CU for AMD, SMX for Kepler orz...
+        'gpu_clock': 1058, # MHz
+        'mem_clock': 3004, # MHz 
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 0, # TFLOP/s
+        'tflops_fp32': 3.250176, # TFLOP/s
+        'tflops_fp64': 0.135424, # TFLOP/s (1:24)
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 3.0 x16',
+        'gpu_chip': 'GK104',
+        'gpu_variant': 'GK104-400-A2',
+        'gpu_arch': 'Kepler',
+        'url': 'https://www.techpowerup.com/gpu-specs/geforce-gtx-680.c342'
+    },
+
+    {
         'vendor': 'AMD',
         'product': 'HD 5870',
         'tdp': 188, # Watt
