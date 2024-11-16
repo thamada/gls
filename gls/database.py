@@ -319,5 +319,32 @@ gpu_data = [
         'gpu_variant': 'AD102',
         'gpu_arch': 'Ada Lovelace',
         'url': 'https://www.techpowerup.com/gpu-specs/rtx-6000-ada-generation.c3933'
+    },
+
+    {
+        'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
+        'vendor': 'INTEL',
+        'product': 'Arc 770',
+        'tdp': 225, # Watt
+        'vram_size': 16, # GB
+        'vram_bw': 512.0, # GB/s = (8.0 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+#        'vram_ecc': ???, # False, True
+        'n_sp_core': 4096,
+        'n_mp': 512, # number of MIMD-processors (SM for Nvidia, CU for AMD, EU for Intel)
+        'gpu_clock': 2400, # MHz
+        'mem_clock': 8000, # MHz
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+        'n_tensor_core': 512,
+#        'gen_tensor_core': ???,
+        'tflops_fp16': 39.3216, # TFLOP/s (2:1)
+        'tflops_fp32': 19.6608, # TFLOP/s
+#        'tflops_fp8_tensor': ???, # TFLOP/s (Effective FP8 TFLOP/s) ???
+#        'tflops_fp8_tensor_sparse': ???, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature) ???
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'DG2-512',
+        'gpu_variant': 'ACM-G10',
+        'gpu_arch': 'Generation 12.7',
+        'url': 'https://www.techpowerup.com/gpu-specs/arc-a770.c3914'
     }
+
 ]
