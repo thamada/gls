@@ -140,10 +140,12 @@ def main():
     if args.upgrade:
         print('Upgrading gls to the latest version...')
         try:
-            subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'git+https://github.com/thamada/gls.git'])
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', '--no-cache-dir', 'git+https://github.com/thamada/gls.git'])
             print('gls has been upgraded to the latest version.')
+            print(f'Current version: {__version__}')
         except subprocess.CalledProcessError as e:
-            print('An error occurred while upgrading gls:', e)
+            print(f'An error occurred while upgrading gls: {e.returncode}')
+            print(f'Stderr: {e.stderr}')
         sys.exit(0)
 
     # '--remove', '--uninstall' オプションが指定された場合の処理
