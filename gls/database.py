@@ -4,6 +4,56 @@
 # GPUのデータを辞書リストで定義
 gpu_data = [
     {
+        'vendor': 'NVIDIA',
+        'product': '8800 GTX',
+        'tdp': 155, # Watt
+        'vram_size': 0.768, # GB
+        'vram_bw': 86.4, # GB/s: (0.9 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 128,
+        'n_mp': 16, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1350, # MHz
+        'mem_clock': 900, # MHz 
+        'mem_bus_width': 384, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 0, # TFLOP/s
+        'tflops_fp32': 0.3456, # TFLOP/s
+        'tflops_fp64': 0, # TFLOP/s
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 1.0 x16',
+        'gpu_chip': 'G80',
+        'gpu_variant': 'G80-300-A2',
+        'gpu_arch': 'Tesla',
+        'url': 'https://www.techpowerup.com/gpu-specs/geforce-8800-gtx.c187'
+    },
+    {
+        'vendor': 'AMD',
+        'product': 'HD 5870',
+        'tdp': 188, # Watt
+        'vram_size': 1.024, # GB
+        'vram_bw': 153.6, # GB/s: (2.4 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 1600,
+        'n_mp': 20, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 850, # MHz
+        'mem_clock': 2400, # MHz 
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 0, # TFLOP/s
+        'tflops_fp32': 2.72, # TFLOP/s
+        'tflops_fp64': 0.544, # TFLOP/s (1:5)
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 2.0 x16', 
+        'gpu_chip': 'Cypress',
+        'gpu_variant': 'Cypress XT(215-0735033)',
+        'gpu_arch': 'TeraScale 2',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-hd-5870.c253'
+    },
+    {
         'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
         'vendor': 'AMD',
         'product': 'MI250X',
