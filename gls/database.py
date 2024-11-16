@@ -4,12 +4,38 @@
 # GPUのデータを辞書リストで定義
 gpu_data = [
     {
+        'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
+        'vendor': 'AMD',
+        'product': 'MI250X',
+        'tdp': 500, # Watt
+        'vram_size': 128, # GB
+        'vram_bw': 3276.8, # GB/s: (1.6 [GHz] * 2)[Gbps]  * 8192-bits / 8.0 [bits/byte]
+#       'vram_ecc': False, # ??
+        'n_sp_core': 14080,
+        'n_mp': 220, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1700.00, # MHz
+        'mem_clock': 1600.0, # MHz
+        'mem_bus_width': 8192, # Memory Bus Width (bits)
+#        'n_tensor_core': ???,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 382.976, # TFLOP/s (8:1)
+        'tflops_fp32': 47.872, # TFLOP/s
+        'tflops_fp64': 47.872, # TFLOP/s (1:1)
+#       'tflops_fp8_tensor': , # TFLOP/s (Effective FP8 TFLOP/s)
+#       'tflops_fp8_tensor_sparse': , # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'Aldebaran',
+        'gpu_variant': 'gfx90a',
+        'gpu_arch': 'CDNA 2.0',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-instinct-mi250x.c3837'
+    },
+    {
         'vendor': 'AMD',
         'product': 'MI300X',
         'tdp': 750, # Watt
         'vram_size': 192, # GB
         'vram_bw': 10649.6, # GB/s: (10.4 [GHz])[Gbps]  * 8192-bits / 8.0 [bits/byte]
-        'vram_ecc': False, 
+#        'vram_ecc': False, # ??
         'n_sp_core': 19456,
         'n_mp': 304, # number of MIMD-processors (SM for Nvidia, CU for AMD)
         'gpu_clock': 2100.00, # MHz
