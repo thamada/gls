@@ -80,6 +80,32 @@ gpu_data = [
     },
 
     {
+        'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
+        'vendor': 'AMD',
+        'product': 'PRO W7900',
+        'tdp': 295, # Watt
+        'vram_size': 48, # GB
+        'vram_bw': 864.0, # GB/s: (9.0 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
+        'vram_ecc': False, 
+        'n_sp_core': 6144,
+        'n_mp': 96, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 2495.00, # MHz
+        'mem_clock': 9000.0, # MHz (1125 MHz * 8)
+        'mem_bus_width': 384, # Memory Bus Width (bits)
+#       'n_tensor_core': ,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 122.63424, # TFLOP/s (2:1)
+        'tflops_fp32': 61.31712, # TFLOP/s
+#       'tflops_fp8_tensor': , # TFLOP/s (Effective FP8 TFLOP/s)
+#       'tflops_fp8_tensor_sparse': , # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'Navi 31 (Plum Bonito)',
+        'gpu_variant': 'gfx1100',
+        'gpu_arch': 'RDNA 3.0',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-pro-w7900.c4147'
+    },
+
+    {
         'vendor': 'NVIDIA',
         'product': 'L4',
         'tdp': 72, # Watt
