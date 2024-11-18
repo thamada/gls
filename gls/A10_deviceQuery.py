@@ -7,23 +7,24 @@ deviceQuery Starting...
 
 Detected 1 CUDA Capable device(s)
 
-Device 0: "NVIDIA GeForce GTX 1050 Ti"
-  CUDA Driver Version / Runtime Version          12.2 / 12.4
-  CUDA Capability Major/Minor version number:    6.1
-  Total amount of global memory:                 4039 MBytes (4234805248 bytes)
-  ( 6) Multiprocessors, (128) CUDA Cores/MP:     768 CUDA Cores
-  GPU Max Clock rate:                            1392 MHz (1.39 GHz)
-  Memory Clock rate:                             3504 Mhz
-  Memory Bus Width:                              128-bit
-  L2 Cache Size:                                 1048576 bytes
+Device 0: "NVIDIA A10"
+  CUDA Driver Version / Runtime Version          12.4 / 12.4
+  CUDA Capability Major/Minor version number:    8.6
+  Total amount of global memory:                 22503 MBytes (23595909120 bytes)
+  (072) Multiprocessors, (128) CUDA Cores/MP:    9216 CUDA Cores
+  GPU Max Clock rate:                            1695 MHz (1.70 GHz)
+  Memory Clock rate:                             6251 Mhz
+  Memory Bus Width:                              384-bit
+  L2 Cache Size:                                 6291456 bytes
   Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
   Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
   Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
   Total amount of constant memory:               65536 bytes
   Total amount of shared memory per block:       49152 bytes
+  Total shared memory per multiprocessor:        102400 bytes
   Total number of registers available per block: 65536
   Warp size:                                     32
-  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per multiprocessor:  1536
   Maximum number of threads per block:           1024
   Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
   Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
@@ -34,8 +35,9 @@ Device 0: "NVIDIA GeForce GTX 1050 Ti"
   Integrated GPU sharing Host Memory:            No
   Support host page-locked memory mapping:       Yes
   Alignment requirement for Surfaces:            Yes
-  Device has ECC support:                        Disabled
+  Device has ECC support:                        Enabled
   Device supports Unified Addressing (UVA):      Yes
+  Device supports Managed Memory:                Yes
   Device supports Compute Preemption:            Yes
   Supports Cooperative Kernel Launch:            Yes
   Supports MultiDevice Co-op Kernel Launch:      Yes
@@ -43,7 +45,7 @@ Device 0: "NVIDIA GeForce GTX 1050 Ti"
   Compute Mode:
      < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
 
-deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 12.2, CUDA Runtime Version = 12.4, NumDevs = 1, Device0 = NVIDIA GeForce GTX 1050 Ti
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 12.4, CUDA Runtime Version = 12.4, NumDevs = 1
 Result = PASS
 '''
 

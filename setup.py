@@ -94,6 +94,9 @@ setup(
             'nvidia-smi.a40=gls.A40x10_smi:main',  # 10 devices
             'deviceQuery.a40=gls.A40x10_deviceQuery:main', # 10 devices
 
+            'nvidia-smi.a10=gls.A10_smi:main',
+            'deviceQuery.a10=gls.A10_deviceQuery:main',
+
             'rocm-smi=gls.MI300X_x4_smi:main', # 4 devices
             'rocminfo=gls.MI300X_x4_rocminfo:main', # 4 devices
             'deviceQuery.mi300x=gls.MI300X_x4_deviceQuery:main', # 4 devices
