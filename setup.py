@@ -98,6 +98,9 @@ setup(
             'nvidia-smi.a10=gls.A10_smi:main',
             'deviceQuery.a10=gls.A10_deviceQuery:main',
 
+            'nvidia-smi.v100=gls.V100_x8_smi:main',
+            'deviceQuery.v100=gls.V100_x8_deviceQuery:main',
+
             'nvidia-smi.gh200=gls.GH200_smi:main',
             'deviceQuery.gh200=gls.GH200_deviceQuery:main',
 

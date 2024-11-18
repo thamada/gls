@@ -307,6 +307,32 @@ gpu_data = [
         'gpu_arch': 'Hopper',
         'url': 'https://www.techpowerup.com/gpu-specs/h100-sxm5-80-gb.c3900'
     },
+
+    {
+        'vendor': 'NVIDIA',
+        'product': 'GH200',
+        'tdp': 700, # Watt
+        'vram_size': 480, # GB
+        'vram_bw': 4022.784, # GB/s: (2.619 [GHz] * 2)[Gbps]  * 6144-bits / 8.0 [bits/byte]
+        'vram_ecc': True, 
+        'n_sp_core': 16896,
+        'n_mp': 132, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1980, # MHz
+        'mem_clock': 2619, # MHz
+        'mem_bus_width': 6144, # Memory Bus Width (bits)
+#        'n_tensor_core': 528,
+#        'gen_tensor_core': 4,
+        'tflops_fp16': 133.81632, # TFLOP/s (2:1)
+        'tflops_fp32': 66.90816, # TFLOP/s
+#        'tflops_fp8_tensor': 1979, # TFLOP/s (Effective FP8 TFLOP/s)
+#        'tflops_fp8_tensor_sparse': 3958, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 5.0 x64', 
+        'gpu_chip': 'GH200',
+        'gpu_variant': 'GH200',
+        'gpu_arch': 'Hopper',
+        'url': 'https://resources.nvidia.com/en-us-grace-cpu/nvidia-grace-hopper'
+    },
+
     {
         'vendor': 'NVIDIA',
         'product': 'GTX 1050 Ti',
