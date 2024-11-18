@@ -52,11 +52,12 @@ setup(
     ],
     entry_points={
         'console_scripts': [
+
+            'nvidia-smi=gls.GH200_smi:main',
+            'deviceQuery=gls.GH200_deviceQuery:main',
+
             'nvidia-smi.gtx1050ti=gls.GTX1050Ti_smi:main',
             'deviceQuery.gtx1050ti=gls.GTX1050Ti_deviceQuery:main',
-
-            'nvidia-smi=gls.H100SXMx8_smi:main',
-            'deviceQuery=gls.H100SXMx8_deviceQuery:main',
 
             'nvidia-smi.h100=gls.H100SXMx8_smi:main',
             'deviceQuery.h100=gls.H100SXMx8_deviceQuery:main',
@@ -96,6 +97,9 @@ setup(
 
             'nvidia-smi.a10=gls.A10_smi:main',
             'deviceQuery.a10=gls.A10_deviceQuery:main',
+
+            'nvidia-smi.gh200=gls.GH200_smi:main',
+            'deviceQuery.gh200=gls.GH200_deviceQuery:main',
 
             'rocm-smi=gls.MI300X_x4_smi:main', # 4 devices
             'rocminfo=gls.MI300X_x4_rocminfo:main', # 4 devices
