@@ -523,9 +523,9 @@ gpu_data = [
 #        'tflops_fp8_tensor_sparse': ???, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature) ???
         'system_interface': 'PCIe 4.0 x8', 
         'gpu_chip': 'DG2-128',
-        'gpu_variant': 'ACM-G11',
-        'gpu_arch': 'Generation 12.7',
-        'url': 'https://www.techpowerup.com/gpu-specs/arc-a380.c3913'
+        'gpu_variant': 'Alchemist',
+        'gpu_arch': 'Xe-HPG',
+        'url': 'https://dgpu-docs.intel.com/devices/hardware-table.html'
     },
 
 
@@ -550,8 +550,8 @@ gpu_data = [
 #        'tflops_fp8_tensor_sparse': ???, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature) ???
         'system_interface': 'PCIe 4.0 x16', 
         'gpu_chip': 'DG2-512',
-        'gpu_variant': 'ACM-G10',
-        'gpu_arch': 'Generation 12.7',
+        'gpu_variant': 'Alchemist',
+        'gpu_arch': 'Xe-HPG',
         'url': 'https://www.techpowerup.com/gpu-specs/arc-a770.c3914'
     }
 
