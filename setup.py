@@ -111,6 +111,9 @@ setup(
             'rocminfo=gls.MI300X_x4_rocminfo:main', # 4 devices
             'deviceQuery.mi300x=gls.MI300X_x4_deviceQuery:main', # 4 devices
 
+            # set device to ~/.gls_config
+            'setDevice=gls.setDevice:main', 
+
             # gls: gpu list
             'gls=gls.gls:main', 
 
