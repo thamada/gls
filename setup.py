@@ -74,6 +74,9 @@ setup(
             'nvidia-smi.rtx6000ada=gls.RTX6000Ada_x8_smi:main', # 8 devices
             'deviceQuery.rtx6000ada=gls.RTX6000Ada_x8_deviceQuery:main', # 8 devices
 
+            'nvidia-smi.rtxa6000=gls.RTX_A6000_x9_smi:main', # 9 devices
+            'deviceQuery.rtxa6000=gls.RTX_A6000_x9_deviceQuery:main', # 9 devices
+
             'nvidia-smi.rtx4060ti=gls.RTX4060Ti_smi:main',
             'deviceQuery.rtx4060ti=gls.RTX4060Ti_deviceQuery:main',
 
