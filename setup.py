@@ -56,6 +56,9 @@ setup(
             'nvidia-smi=gls.GH200_smi:main',
             'deviceQuery=gls.GH200_deviceQuery:main',
 
+            'nvidia-smi.gtx680=gls.GTX680_smi:main',
+            'deviceQuery.gtx680=gls.GTX680_deviceQuery:main',
+
             'nvidia-smi.gtx1050ti=gls.GTX1050Ti_smi:main',
             'deviceQuery.gtx1050ti=gls.GTX1050Ti_deviceQuery:main',
 

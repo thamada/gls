@@ -431,11 +431,63 @@ gpu_data = [
     },
     {
         'vendor': 'NVIDIA',
+        'product': 'RTX 3090',
+        'tdp': 350, # Watt
+        'vram_size': 24, # GB
+        'vram_bw': 936.096, # GB/s = (9.751 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 10496,
+        'n_mp': 82, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1695, # MHz
+        'mem_clock': 9751, # MHz
+        'mem_bus_width': 384, # Memory Bus Width (bits)
+        'n_tensor_core': 328,
+        'gen_tensor_core': 3,
+        'tflops_fp16': 35.58144, # TFLOP/s
+        'tflops_fp32': 35.58144, # TFLOP/s
+        'tflops_fp16_tensor': 142.0, # TFLOP/s
+        'tflops_int8_tensor': 284.0, # TOPS/s
+        'tflops_int4_tensor': 568.0, # TOPS/s
+        'system_interface': 'PCIe 4.0 x16',
+        'gpu_chip': 'GA102',
+        'gpu_variant': 'GA102-???-??',
+        'gpu_arch': 'Ampere',
+        'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
+    },
+
+    {
+        'vendor': 'NVIDIA',
+        'product': 'RTX 3070',
+        'tdp': 220, # Watt
+        'vram_size': 8, # GB
+        'vram_bw': 448.064, # GB/s = (7.001 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 5888,
+        'n_mp': 46, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1725, # MHz
+        'mem_clock': 7001, # MHz
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+        'n_tensor_core': 184,
+        'gen_tensor_core': 3,
+        'tflops_fp16': 20.3136, # TFLOP/s
+        'tflops_fp32': 20.3136, # TFLOP/s
+        'tflops_fp16_tensor': 81.3, # TFLOP/s (with FP16 accum)
+        'tflops_int8_tensor': 162.6, # TOPS/s
+        'tflops_int4_tensor': 325.2, # TOPS/s
+        'system_interface': 'PCIe 4.0 x16',
+        'gpu_chip': 'GA104',
+        'gpu_variant': 'GA104-???-??',
+        'gpu_arch': 'Ampere',
+        'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
+    },
+
+    {
+        'vendor': 'NVIDIA',
         'product': 'RTX 2000 Ada',
         'tdp': 70, # Watt
         'vram_size': 16, # GB
         'vram_bw': 224.032, # GB/s = (7.001 [GHz] * 2)[Gbps]  * 128-bits / 8.0 [bits/byte]
-        'vram_ecc': False, 
+        'vram_ecc': False,
         'n_sp_core': 2816,
         'n_mp': 22, # number of MIMD-processors (SM for Nvidia, CU for AMD)
         'gpu_clock': 2130, # MHz
