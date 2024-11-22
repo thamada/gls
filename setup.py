@@ -92,6 +92,9 @@ setup(
             'nvidia-smi.a100=gls.A100SXMx4_smi:main',  # 4 devices
             'deviceQuery.a100=gls.A100SXMx4_deviceQuery:main', # 4 devices
 
+            'nvidia-smi.rtx3070=gls.RTX3070_smi:main',
+            'deviceQuery.rtx3070=gls.RTX3070_deviceQuery:main',
+
             'nvidia-smi.rtx3090=gls.RTX3090_smi:main',  # 2 devices
             'deviceQuery.rtx3090=gls.RTX3090_deviceQuery:main', # 2 devices
 

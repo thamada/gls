@@ -32,8 +32,8 @@ gls --remove
 | commands           | variations                 |
 |--------------------|----------------------------|
 | gls                | --help, --upgrade, --remove, --csv, --version|
-| nvidia-smi         | -a, .a40, .a10, .a100, .gh200, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtxa6000, .rtx4060ti, .rtx4090, .rtx3090, .gtx1050ti, .l40s, .l4, .v100|
-| deviceQuery        | .a40, .a10, .a100, .gh200, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtxa6000, .rtx4060ti, .rtx4090, .rtx3090, .gtx1050ti, .l40s, .l4, .v100, .mi300x |
+| nvidia-smi         | -a, .a40, .a10, .a100, .gh200, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtxa6000, .rtx4060ti, .rtx4090, .rtx3070, .rtx3090, .gtx1050ti, .l40s, .l4, .v100|
+| deviceQuery        | .a40, .a10, .a100, .gh200, .h100, .h100nvl, .rtx2000ada, .rtx4000ada, .rtx6000ada, .rtxa6000, .rtx4060ti, .rtx4090, .rtx3070, .rtx3090, .gtx1050ti, .l40s, .l4, .v100, .mi300x |
 | rocm-smi           | -a                         |
 | rocminfo           |                            |
 | setDevice          |                            |
