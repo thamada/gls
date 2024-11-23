@@ -13,24 +13,28 @@ def curses_main(stdscr):
     curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_GREEN)
 
     options = [
-        " 0: NVIDIA GH200",
-        " 1: NVIDIA GTX1050Ti",
-        " 2: NVIDIA H100 SXM x8",
-        " 3: NVIDIA H100 NVL x2",
-        " 4: NVIDIA RTX 2000 Ada",
-        " 5: NVIDIA RTX 4000 Ada",
-        " 6: NVIDIA RTX 6000 Ada x8",
-        " 7: NVIDIA RTX A6000 x9",
-        " 8: NVIDIA RTX 4060 Ti",
-        " 9: NVIDIA RTX 4090",
-        "10: NVIDIA L40S",
-        "11: NVIDIA L4",
-        "12: NVIDIA A100 SXM x4",
-        "13: NVIDIA RTX 3090",
-        "14: NVIDIA A40 x10",
-        "15: NVIDIA A10",
-        "16: NVIDIA V100 x8",
-        "17: AMD MI300X"
+        "NVIDIA GH200",
+        "NVIDIA GTX1050Ti",
+        "NVIDIA H100 SXM x8",
+        "NVIDIA H100 NVL x2",
+        "NVIDIA RTX 2000 Ada",
+        "NVIDIA RTX 4000 Ada",
+        "NVIDIA RTX 6000 Ada x8",
+        "NVIDIA RTX A6000 x9",
+        "NVIDIA RTX 4060 Ti",
+        "NVIDIA RTX 4090",
+        "NVIDIA L40S",
+        "NVIDIA L4",
+        "NVIDIA A100 SXM x4",
+        "NVIDIA RTX 3090",
+        "NVIDIA A40 x10",
+        "NVIDIA A10",
+        "NVIDIA V100 x8",
+        "NVIDIA RTX 3070",
+        "NVIDIA RTX 3090",
+        "NVIDIA GTX 1050 Ti",
+        "NVIDIA GTX 680",
+        "AMD MI300X"
     ]
 
     current_row = 0
@@ -41,12 +45,13 @@ def curses_main(stdscr):
 
 
         for idx, option in enumerate(options):
+            i_text = "%02s: %s" % (idx+1, option)
             x = width // 2 - len(options[0]) // 2  # 中央に配置するためのx座標計算（左寄せ）
             y = height // 2 - len(options) // 2 + idx  # 中央に配置するためのy座標計算
             if idx == current_row:
-                stdscr.addstr(y, x, option, curses.color_pair(1))
+                stdscr.addstr(y, x, i_text, curses.color_pair(1))
             else:
-                stdscr.addstr(y, x, option)
+                stdscr.addstr(y, x, i_text)
 
         key = stdscr.getch()
 
