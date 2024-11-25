@@ -38,6 +38,10 @@ gls --remove
 | rocminfo           |                            |
 | setDevice          |                            |
 
+## Demo
+
+<script src="https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit.js" id="asciicast-TXn0LrBbp59YItJhZk87GDcit" async="true"></script>
+
 ## Screenshot
 ![screenshot](./ss.png)
 
