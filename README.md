@@ -40,7 +40,7 @@ gls --remove
 
 ## Demo
 
-<script src="https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit.js" id="asciicast-TXn0LrBbp59YItJhZk87GDcit" async="true"></script>
+[![asciicast](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit.svg)](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit)
 
 ## Screenshot
 ![screenshot](./ss.png)
