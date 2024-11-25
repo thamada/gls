@@ -42,4 +42,6 @@ gls --remove
 
 [![asciicast](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit.svg)](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit)
 
+[![asciicast](https://asciinema.org/a/s6HwspuwfToy6TrlxwsnNNDkS.svg)](https://asciinema.org/a/s6HwspuwfToy6TrlxwsnNNDkS)
+
 Enjoy gls!
