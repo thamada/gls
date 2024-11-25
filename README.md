@@ -42,7 +42,4 @@ gls --remove
 
 [![asciicast](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit.svg)](https://asciinema.org/a/TXn0LrBbp59YItJhZk87GDcit)
 
-## Screenshot
-![screenshot](./ss.png)
-
 Enjoy gls!
