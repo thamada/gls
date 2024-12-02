@@ -611,7 +611,7 @@ gpu_data = [
         'gpu_chip': 'GA102',
         'gpu_variant': 'GA102-???-??',
         'gpu_arch': 'Ampere',
-        'date_market': '2021-02-01',
+        'date_market': '2021-01-01',
         'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
     },
 
@@ -637,6 +637,7 @@ gpu_data = [
         'gpu_chip': 'AD107',
         'gpu_variant': 'AD107-???-??',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2024-03-15',
         'url': 'https://resources.nvidia.com/en-us-briefcase-for-datasheets/proviz-rtx-2000-ada'
     },
     {
@@ -661,6 +662,7 @@ gpu_data = [
         'gpu_chip': 'AD104',
         'gpu_variant': 'AD104-???-??',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2023-10-01',
         'url': 'https://www.techpowerup.com/gpu-specs/rtx-4000-ada-generation.c4171'
     },
     {
