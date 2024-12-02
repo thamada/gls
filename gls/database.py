@@ -260,6 +260,31 @@ gpu_data = [
 
     {
         'vendor': 'NVIDIA',
+        'product': 'H200',
+        'tdp': 700, # Watt
+        'vram_size': 141, # GB (143072 MB)
+        'vram_bw': 4916.736, # GB/s: (3.201 [GHz] * 2)[Gbps]  * 6144-bits / 8.0 [bits/byte]
+        'vram_ecc': True, 
+        'n_sp_core': 16896,
+        'n_mp': 132, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1980, # MHz
+        'mem_clock': 3201, # MHz
+        'mem_bus_width': 6144, # Memory Bus Width (bits)
+        'n_tensor_core': 528,
+        'gen_tensor_core': 4,
+#        'tflops_fp16': , # TFLOP/s
+        'tflops_fp32': 66.90816, # TFLOP/s
+        'tflops_fp8_tensor': 1979, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 3958, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 5.0 x16', 
+        'gpu_chip': 'H200',
+        'gpu_variant': 'H200 SXM HBM3',
+        'gpu_arch': 'Hopper',
+        'url': 'https://resources.nvidia.com/en-us-data-center-overview-mc/en-us-data-center-overview/hpc-datasheet-sc23-h200'
+    },
+
+    {
+        'vendor': 'NVIDIA',
         'product': 'H100 NVL',
         'tdp': 310, # Watt
         'vram_size': 94, # GB (95346 MB)
@@ -280,7 +305,7 @@ gpu_data = [
         'gpu_chip': 'GH100',
         'gpu_variant': 'GH100 NVL 94GB HBM3',
         'gpu_arch': 'Hopper',
-        'url': ''
+        'url': 'https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/h100/PB-11773-001_v01.pdf'
     },
 
     {
