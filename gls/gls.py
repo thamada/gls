@@ -20,7 +20,7 @@ def change_df(dataFrame):
     df = df.drop(columns=['hints'])
 
     # 列の並びを変更したDataFrameを作成
-    new_column_order = ['product', 'tflops_fp32', 'tflops_fp16', 'vram_bw', 'tdp', 'vram_size', 'n_sp_core', 'n_mp', 'gpu_clock', 'system_interface', 'n_tensor_core', 'tflops_fp8_tensor', 'gpu_chip', 'gpu_arch']
+    new_column_order = ['product', 'tflops_fp32', 'tflops_fp16', 'vram_bw', 'tdp', 'vram_size', 'n_sp_core', 'n_mp', 'gpu_clock', 'system_interface', 'n_tensor_core', 'tflops_fp8_tensor', 'gpu_chip', 'gpu_arch', 'date_market']
     df = df[new_column_order]
 
     # FP32列でソート
@@ -60,6 +60,7 @@ def change_df(dataFrame):
     df = df.rename(columns={'tdp': 'TDP'})
     df = df.rename(columns={'gpu_chip': 'ASIC'})
     df = df.rename(columns={'gpu_arch': 'arch'})
+    df = df.rename(columns={'date_market': 'release'})
 
     return df
 
