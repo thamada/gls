@@ -260,7 +260,7 @@ gpu_data = [
 
     {
         'vendor': 'NVIDIA',
-        'product': 'H200',
+        'product': 'H200 SXM',
         'tdp': 700, # Watt
         'vram_size': 141, # GB (143072 MB)
         'vram_bw': 4916.736, # GB/s: (3.201 [GHz] * 2)[Gbps]  * 6144-bits / 8.0 [bits/byte]
@@ -278,7 +278,7 @@ gpu_data = [
         'tflops_fp8_tensor_sparse': 3958, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
         'system_interface': 'PCIe 5.0 x16', 
         'gpu_chip': 'H200',
-        'gpu_variant': 'H200 SXM HBM3',
+        'gpu_variant': 'H200 SXM 141GB HBM3e',
         'gpu_arch': 'Hopper',
         'url': 'https://resources.nvidia.com/en-us-data-center-overview-mc/en-us-data-center-overview/hpc-datasheet-sc23-h200'
     },
