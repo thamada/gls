@@ -495,7 +495,7 @@ gpu_data = [
         'gpu_clock': 1695, # MHz
         'mem_clock': 9751, # MHz
         'mem_bus_width': 384, # Memory Bus Width (bits)
-        'n_tensor_core': 328,
+        'n_tensor_core': 328, # 4 TC/SM
         'gen_tensor_core': 3,
         'tflops_fp16': 35.58144, # TFLOP/s
         'tflops_fp32': 35.58144, # TFLOP/s
@@ -509,7 +509,32 @@ gpu_data = [
         'date_market': '2020-09-24',
         'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
     },
-
+    {
+        'vendor': 'NVIDIA',
+        'product': 'RTX 3080',
+        'tdp': 320, # Watt
+        'vram_size': 10, # GB
+        'vram_bw': 760.080, # GB/s = (9.501 [GHz] * 2)[Gbps]  * 320-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 8704,
+        'n_mp': 68, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1710, # MHz
+        'mem_clock': 9501, # MHz
+        'mem_bus_width': 320, # Memory Bus Width (bits)
+        'n_tensor_core': 272, # 4 TC/SM
+        'gen_tensor_core': 3,
+        'tflops_fp16': 29.76768, # TFLOP/s
+        'tflops_fp32': 29.76768, # TFLOP/s
+        'tflops_fp16_tensor': 119.0, # TFLOP/s
+        'tflops_int8_tensor': 238.0, # TOPS/s
+        'tflops_int4_tensor': 476.0, # TOPS/s
+        'system_interface': 'PCIe 4.0 x16',
+        'gpu_chip': 'GA102',
+        'gpu_variant': 'GA102-???-??',
+        'gpu_arch': 'Ampere',
+        'date_market': '2020-09-17',
+        'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
+    },
     {
         'vendor': 'NVIDIA',
         'product': 'RTX 3070',
@@ -522,7 +547,7 @@ gpu_data = [
         'gpu_clock': 1725, # MHz
         'mem_clock': 7001, # MHz
         'mem_bus_width': 256, # Memory Bus Width (bits)
-        'n_tensor_core': 184,
+        'n_tensor_core': 184, # 4 TC/SM
         'gen_tensor_core': 3,
         'tflops_fp16': 20.3136, # TFLOP/s
         'tflops_fp32': 20.3136, # TFLOP/s
@@ -534,6 +559,59 @@ gpu_data = [
         'gpu_variant': 'GA104-???-??',
         'gpu_arch': 'Ampere',
         'date_market': '2020-10-29',
+        'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
+    },
+    {
+        'vendor': 'NVIDIA',
+        'product': 'A40',
+        'tdp': 300, # Watt
+        'vram_size': 48, # GB (49152 MiB)
+        'vram_bw': 696.0, # GB/s = (7.250 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 10752,
+        'n_mp': 84, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1740, # MHz
+        'mem_clock': 7250, # MHz
+        'mem_bus_width': 384, # Memory Bus Width (bits)
+        'n_tensor_core': 336, # 4 TC/SM
+        'gen_tensor_core': 3,
+        'tflops_fp16': 37.41696, # TFLOP/s
+        'tflops_fp32': 37.41696, # TFLOP/s
+        'tflops_fp16_tensor': 149.7, # TFLOP/s
+        'tflops_int8_tensor': 299.3, # TOPS/s
+        'tflops_int4_tensor': 598.7, # TOPS/s
+        'system_interface': 'PCIe 4.0 x16',
+        'gpu_chip': 'GA102',
+        'gpu_variant': 'GA102-???-??',
+        'gpu_arch': 'Ampere',
+        'date_market': '2021-02-01',
+        'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
+    },
+    {
+        'vendor': 'NVIDIA',
+        'product': 'A6000',
+        'tdp': 300, # Watt
+        'vram_size': 48, # GB (49152 MiB)
+        'vram_bw': 768.0, # GB/s = (8.000 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 10752,
+        'n_mp': 84, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1800, # MHz
+        'mem_clock': 8000, # MHz
+        'mem_bus_width': 384, # Memory Bus Width (bits)
+        'n_tensor_core': 336, # 4 TC/SM
+        'gen_tensor_core': 3,
+
+        'tflops_fp16': 38.7072, # TFLOP/s
+        'tflops_fp32': 38.7072, # TFLOP/s
+        'tflops_fp16_tensor': 154.8, # TFLOP/s
+        'tflops_int8_tensor': 309.7, # TOPS/s
+        'tflops_int4_tensor': 619.3, # TOPS/s
+        'system_interface': 'PCIe 4.0 x16',
+        'gpu_chip': 'GA102',
+        'gpu_variant': 'GA102-???-??',
+        'gpu_arch': 'Ampere',
+        'date_market': '2021-02-01',
         'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
     },
 
