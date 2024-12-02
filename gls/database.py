@@ -157,9 +157,36 @@ gpu_data = [
         'gpu_arch': 'CDNA 3.0',
         'url': 'https://www.techpowerup.com/gpu-specs/radeon-instinct-mi300x.c4179'
     },
+
     {
         'vendor': 'AMD',
-        'product': 'RX 7900 XTX',
+        'product': 'RX7900GRE',
+        'tdp': 260, # Watt
+        'vram_size': 16, # GB
+        'vram_bw': 576.0, # GB/s: (9.0 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': False, 
+        'n_sp_core': 5120,
+        'n_mp': 80, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 2245.00, # MHz
+        'mem_clock': 9000.0, # MHz (1250 MHz * 8)
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+#       'n_tensor_core': ,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 91.9552, # TFLOP/s (2:1)
+        'tflops_fp32': 45.9776, # TFLOP/s
+#       'tflops_fp8_tensor': , # TFLOP/s (Effective FP8 TFLOP/s)
+#       'tflops_fp8_tensor_sparse': , # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'Navi 31 (Plum Bonito)',
+#        'gpu_variant': '',
+        'gpu_arch': 'RDNA 3.0',
+        'date_market': '2024-03-01',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941'
+    },
+
+    {
+        'vendor': 'AMD',
+        'product': 'RX7900XTX',
         'tdp': 355, # Watt
         'vram_size': 24, # GB
         'vram_bw': 960.0, # GB/s: (10.0 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
@@ -179,9 +206,9 @@ gpu_data = [
         'gpu_chip': 'Navi 31 (Plum Bonito)',
         'gpu_variant': 'gfx1100',
         'gpu_arch': 'RDNA 3.0',
+        'date_market': '2022-12-16',
         'url': 'https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941'
     },
-
     {
         'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
         'vendor': 'AMD',
@@ -428,6 +455,7 @@ gpu_data = [
         'gpu_chip': 'AD102',
         'gpu_variant': 'AD102-300-A1',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2022-10-12',
         'url': 'https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889'
     },
     {
@@ -452,6 +480,7 @@ gpu_data = [
         'gpu_chip': 'AD106',
         'gpu_variant': 'AD106-351-A1',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2023-05-24',
         'url': 'https://www.techpowerup.com/308795/nvidia-explains-geforce-rtx-40-series-vram-functionality'
     },
     {
@@ -477,6 +506,7 @@ gpu_data = [
         'gpu_chip': 'GA102',
         'gpu_variant': 'GA102-???-??',
         'gpu_arch': 'Ampere',
+        'date_market': '2020-09-24',
         'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
     },
 
@@ -503,6 +533,7 @@ gpu_data = [
         'gpu_chip': 'GA104',
         'gpu_variant': 'GA104-???-??',
         'gpu_arch': 'Ampere',
+        'date_market': '2020-10-29',
         'url': 'https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf'
     },
 
