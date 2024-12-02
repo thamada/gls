@@ -26,6 +26,7 @@ gpu_data = [
         'gpu_chip': 'G80',
         'gpu_variant': 'G80-300-A2',
         'gpu_arch': 'Tesla',
+        'date_market': '2006-11-09',
         'url': 'https://www.techpowerup.com/gpu-specs/geforce-8800-gtx.c187'
     },
 
@@ -52,6 +53,7 @@ gpu_data = [
         'gpu_chip': 'GT200B',
         'gpu_variant': 'G200-350-B3',
         'gpu_arch': 'Tesla 2.0',
+        'date_market': '2009-01-08',
         'url': 'https://www.techpowerup.com/gpu-specs/geforce-gtx-285.c238'
     },
 
@@ -78,6 +80,7 @@ gpu_data = [
         'gpu_chip': 'GK104',
         'gpu_variant': 'GK104-400-A2',
         'gpu_arch': 'Kepler',
+        'date_market': '2012-03-23',
         'url': 'https://www.techpowerup.com/gpu-specs/geforce-gtx-680.c342'
     },
 
@@ -104,6 +107,7 @@ gpu_data = [
         'gpu_chip': 'Cypress',
         'gpu_variant': 'Cypress XT(215-0735033)',
         'gpu_arch': 'TeraScale 2',
+        'date_market': '2009-09-26',
         'url': 'https://www.techpowerup.com/gpu-specs/radeon-hd-5870.c253'
     },
     {
@@ -216,7 +220,7 @@ gpu_data = [
         'tdp': 295, # Watt
         'vram_size': 48, # GB
         'vram_bw': 864.0, # GB/s: (9.0 [GHz] * 2)[Gbps]  * 384-bits / 8.0 [bits/byte]
-        'vram_ecc': False, 
+        'vram_ecc': True, 
         'n_sp_core': 6144,
         'n_mp': 96, # number of MIMD-processors (SM for Nvidia, CU for AMD)
         'gpu_clock': 2495.00, # MHz
@@ -232,7 +236,34 @@ gpu_data = [
         'gpu_chip': 'Navi 31 (Plum Bonito)',
         'gpu_variant': 'gfx1100',
         'gpu_arch': 'RDNA 3.0',
+        'date_market': '2024-06-19',
         'url': 'https://www.techpowerup.com/gpu-specs/radeon-pro-w7900.c4147'
+    },
+    {
+        'hints': 'Only from catalog brochure. Get real hardware!', # 要実機検証
+        'vendor': 'AMD',
+        'product': 'PRO W7800',
+        'tdp': 260, # Watt
+        'vram_size': 32, # GB
+        'vram_bw': 576.0, # GB/s: (9.0 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': True, 
+        'n_sp_core': 4480,
+        'n_mp': 70, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 2499.00, # MHz
+        'mem_clock': 9000.0, # MHz (1125 MHz * 8)
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+#       'n_tensor_core': ,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 89.56416, # TFLOP/s (2:1)
+        'tflops_fp32': 44.78208, # TFLOP/s
+#       'tflops_fp8_tensor': , # TFLOP/s (Effective FP8 TFLOP/s)
+#       'tflops_fp8_tensor_sparse': , # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'Navi 31 (Plum Bonito)',
+        'gpu_variant': 'gfx1100',
+        'gpu_arch': 'RDNA 3.0',
+        'date_market': '2024-06-19',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-pro-w7800.c4148'
     },
 
     {
@@ -257,6 +288,7 @@ gpu_data = [
         'gpu_chip': 'AD104',
         'gpu_variant': 'AD104-???-A1',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2023-05-01',
         'url': 'https://www.techpowerup.com/gpu-specs/l4.c4091'
     },
 
@@ -282,6 +314,7 @@ gpu_data = [
         'gpu_chip': 'AD102',
         'gpu_variant': 'AD102-???-A1',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2023-10-01',
         'url': 'https://www.techpowerup.com/gpu-specs/l40s.c4173'
     },
 
