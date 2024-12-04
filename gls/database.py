@@ -5,6 +5,32 @@
 gpu_data = [
     {
         'vendor': 'NVIDIA',
+        'product': '8800 GTS',
+        'tdp': 150, # Watt
+        'vram_size': 0.640, # GB
+        'vram_bw': 64.0, # GB/s: (0.8 [GHz] * 2)[Gbps]  * 320-bits / 8.0 [bits/byte]
+        'vram_ecc': False,
+        'n_sp_core': 112,
+        'n_mp': 14, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 1200, # MHz
+        'mem_clock': 800, # MHz 
+        'mem_bus_width': 320, # Memory Bus Width (bits)
+        'n_tensor_core': 0,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 0, # TFLOP/s
+        'tflops_fp32': 0.2688, # TFLOP/s
+        'tflops_fp64': 0, # TFLOP/s
+        'tflops_fp8_tensor': 0, # TFLOP/s (Effective FP8 TFLOP/s)
+        'tflops_fp8_tensor_sparse': 0, # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 1.0 x16',
+        'gpu_chip': 'G80',
+        'gpu_variant': 'G80-100-K0-A2',
+        'gpu_arch': 'Tesla',
+        'date_market': '2006-11-09',
+        'url': 'https://www.nvidia.co.uk/content/PDF/Geforce_8800/GeForce_8800_GPU_Architecture_Technical_Brief.pdf'
+    },
+    {
+        'vendor': 'NVIDIA',
         'product': '8800 GTX',
         'tdp': 155, # Watt
         'vram_size': 0.768, # GB
