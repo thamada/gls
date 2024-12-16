@@ -160,6 +160,7 @@ gpu_data = [
         'gpu_chip': 'Aldebaran',
         'gpu_variant': 'gfx90a',
         'gpu_arch': 'CDNA 2.0',
+        'date_market': '2021-11-08',
         'url': 'https://www.techpowerup.com/gpu-specs/radeon-instinct-mi250x.c3837'
     },
     {
