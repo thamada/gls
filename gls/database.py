@@ -747,6 +747,7 @@ gpu_data = [
         'gpu_chip': 'AD102',
         'gpu_variant': 'AD102',
         'gpu_arch': 'Ada Lovelace',
+        'date_market': '2022-12-03',
         'url': 'https://www.techpowerup.com/gpu-specs/rtx-6000-ada-generation.c3933'
     },
 
