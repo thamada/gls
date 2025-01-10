@@ -191,6 +191,32 @@ gpu_data = [
 
     {
         'vendor': 'AMD',
+        'product': 'RX9070XT',
+        'tdp': 260, # Watt
+        'vram_size': 16, # GB
+        'vram_bw': 624.128, # GB/s: (9.0 [GHz] * 2)[Gbps]  * 256-bits / 8.0 [bits/byte]
+        'vram_ecc': False, 
+        'n_sp_core': 4069,
+        'n_mp': 64, # number of MIMD-processors (SM for Nvidia, CU for AMD)
+        'gpu_clock': 2970.00, # MHz
+        'mem_clock': 9752.0, # MHz (2438 MHz * 4)
+        'mem_bus_width': 256, # Memory Bus Width (bits)
+#       'n_tensor_core': ,
+#       'gen_tensor_core': ,
+        'tflops_fp16': 48.66048, # TFLOP/s (2:1)
+        'tflops_fp32': 24.33024, # TFLOP/s
+#       'tflops_fp8_tensor': , # TFLOP/s (Effective FP8 TFLOP/s)
+#       'tflops_fp8_tensor_sparse': , # TFLOP/s (Effective FP8 TFLOP/s using the sparsity feature)
+        'system_interface': 'PCIe 4.0 x16', 
+        'gpu_chip': 'Navi 48',
+        'gpu_variant': 'Navi 48 XT',
+        'gpu_arch': 'RDNA 4.0',
+        'date_market': '2025-01-24',
+        'url': 'https://www.techpowerup.com/gpu-specs/radeon-rx-9070-xt.c4229'
+    },
+
+    {
+        'vendor': 'AMD',
         'product': 'RX7900GRE',
         'tdp': 260, # Watt
         'vram_size': 16, # GB
