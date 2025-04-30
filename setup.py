@@ -83,6 +83,9 @@ setup(
             'nvidia-smi.rtx4060ti=gls.RTX4060Ti_smi:main',
             'deviceQuery.rtx4060ti=gls.RTX4060Ti_deviceQuery:main',
 
+            'nvidia-smi.rtx5090=gls.RTX5090_smi:main',
+            'deviceQuery.rtx5090=gls.RTX5090_deviceQuery:main',
+
             'nvidia-smi.rtx4090=gls.RTX4090_smi:main', # 8 devices
             'deviceQuery.rtx4090=gls.RTX4090_deviceQuery:main', # 8 devices
 
